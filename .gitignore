@@ -1,0 +1,18 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Node.js
+node_modules/
+dist/
+
+# Uploaded files
+uploads/
+*.log
+
+# Editor files
+.vscode/

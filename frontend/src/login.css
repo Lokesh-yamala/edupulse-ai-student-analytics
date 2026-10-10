@@ -1,0 +1,147 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eaf1ff, #f8fbff);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 55px rgba(31, 78, 121, 0.12);
+}
+
+.login-brand-icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 18px;
+  color: white;
+  background: linear-gradient(135deg, #1f4e79, #3978e5);
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #173b60;
+  font-size: 29px;
+}
+
+.login-subtitle {
+  margin: 8px 0 26px;
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+}
+
+.role-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  background: #f1f5f9;
+}
+
+.role-switch button {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px;
+  color: #64748b;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.role-switch button.role-active {
+  color: #1f4e79;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card form > label {
+  margin: 14px 0 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  min-height: 48px;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  color: #64748b;
+  background: #fff;
+}
+
+.login-input-wrap:focus-within {
+  border-color: #3978e5;
+  box-shadow: 0 0 0 3px rgba(57, 120, 229, 0.1);
+}
+
+.login-input-wrap input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #1e293b;
+  background: transparent;
+  font: inherit;
+}
+
+.password-toggle {
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border: 0;
+  color: #64748b;
+  background: transparent;
+  cursor: pointer;
+}
+
+.login-submit {
+  margin-top: 25px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(135deg, #1f4e79, #3978e5);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-submit:hover {
+  filter: brightness(1.05);
+}
+
+.login-error {
+  margin: 12px 0 0;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 26px 20px;
+  }
+}
