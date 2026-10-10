@@ -1,5 +1,5 @@
 
-import { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   Activity,
@@ -37,7 +37,10 @@ import Login from './login';
 import './style.css';
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD
+    ? "https://edupulse-ai-student-analytics.onrender.com"
+    : "http://127.0.0.1:8000");
 const demoStudents = [
   { id: 1, name: 'Aarav Kumar', department: 'CSE', attendance: 92, marks: 86, risk: 'Low' },
   { id: 2, name: 'Priya Sharma', department: 'CSE', attendance: 68, marks: 58, risk: 'Medium' },

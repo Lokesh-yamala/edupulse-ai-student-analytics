@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { GraduationCap, Eye, EyeOff, LockKeyhole, UserRound } from 'lucide-react';
 import './login.css';
 
